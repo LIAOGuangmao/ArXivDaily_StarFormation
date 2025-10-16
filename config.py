@@ -15,7 +15,7 @@ REPO_NAME = 'ArXivDaily_StarFormation'
 NEW_SUB_URL = 'https://arxiv.org/list/astro-ph/new'
 
 # Keywords to search
-KEYWORD_LIST = ["star formation", "star-forming", "molecular cloud", "interstellar medium", "cloud", "clump", "core", "filament", "atomic gas", "N-PDF", "initial conditions", "IRDC", "deuterium", "prestellar", "starless", "turbulence", "magnetic", "virial"]
+KEYWORD_LIST = ["star formation", "star-forming", "molecular cloud", "interstellar medium", "cloud", "clump", "core", "filament", "atomic gas", "N-PDF", "initial conditions", "IRDC", "deuterium", "prestellar", "starless", "turbulence", "magnetic", "virial", "mach number"]
 # Keywords to exclude
 KEYWORD_EX_LIST = ["galaxies", "galaxy cluster", " AGN ", "standard candle", "X-ray binar", "solar corona"]
 # Note that the 'Keywords' above are actually searched in the abstract instead of the real keyword section. 
