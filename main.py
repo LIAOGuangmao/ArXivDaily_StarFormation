@@ -101,8 +101,8 @@ def main(args):
 
     now = datetime.datetime.now()
     current_hour = now.hour
-    if current_hour==10 or current_hour==11 or True: make_github_issue(title=issue_title, body=full_report,labels=keyword_list, 
-    TOKEN=os.environ['TOKEN'])
+    if True:
+        make_github_issue(title=issue_title, body=full_report,labels=keyword_list,TOKEN=os.environ['TOKEN'])
     print("end")
 
 if __name__ == '__main__':
