@@ -61,11 +61,11 @@ def main(args):
     import datetime
     
     full_report = '# '+issue_title+'\n'
-    full_report = full_report + 'Auto update Star Formation & Molecular Cloud papers at about 2:30am UTC (10:30am Beijing time) every weekday.'+'\n'
+    full_report = full_report + 'Auto update Star Formation & Molecular Cloud arxiv papers at about 2:00am UTC (10:00am Beijing time) every weekday.'+'\n'
     full_report = full_report + '\n\n'
-    full_report = full_report + '阅读 `Usage.md`了解如何使用此repo实现个性化的Arxiv论文推送' + '\n\n'
-    full_report = full_report + 'See `Usage.md` for instructions on how to personalize the repo. ' + '\n'
-    full_report = full_report + '\n\n'
+    # full_report = full_report + '阅读 `Usage.md`了解如何使用此repo实现个性化的Arxiv论文推送' + '\n\n'
+    # full_report = full_report + 'See `Usage.md` for instructions on how to personalize the repo. ' + '\n'
+    # full_report = full_report + '\n\n'
     full_report = full_report + 'Keyword list: ' + str(keyword_list) + '\n'
     full_report = full_report + '\n\n'
     full_report = full_report + 'Excluded: ' + str(keyword_ex_list) + '\n'
@@ -84,6 +84,10 @@ def main(args):
     full_report = full_report + 'by olozhika (Xing Yuchen). ' + '\n'
     full_report = full_report + '\n\n'
     full_report = full_report + datetime.datetime.now().strftime("%Y-%m-%d") + '\n'
+    full_report = full_report + '\n\n'
+    full_report = full_report + '读书破万卷，下笔如有神。——唐·杜甫' + '\n\n'
+    full_report = full_report + 'The more that you read, the more things you will know. The more that you learn, the more places you'll go. — Dr. Seuss' + '\n'
+    
 
     # full_report = full_report + '\n</details>'
 
