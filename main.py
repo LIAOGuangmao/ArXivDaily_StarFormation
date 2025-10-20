@@ -84,9 +84,9 @@ def main(args):
     full_report = full_report + 'by olozhika (Xing Yuchen). ' + '\n'
     full_report = full_report + '\n\n'
     full_report = full_report + datetime.datetime.now().strftime("%Y-%m-%d") + '\n'
-    full_report = full_report + '\n\n'
-    full_report = full_report + '读书破万卷，下笔如有神。——唐·杜甫' + '\n\n'
-    full_report = full_report + "The more that you read, the more things you will know. The more that you learn, the more places you'll go. — Dr. Seuss" + '\n'
+    # full_report = full_report + '\n\n'
+    # full_report = full_report + '读书破万卷，下笔如有神。——唐·杜甫' + '\n\n'
+    # full_report = full_report + "The more that you read, the more things you will know. The more that you learn, the more places you'll go. — Dr. Seuss" + '\n'
     
 
     # full_report = full_report + '\n</details>'
