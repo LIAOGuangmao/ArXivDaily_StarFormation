@@ -105,7 +105,7 @@ def main(args):
 
     now = datetime.datetime.now()
     current_hour = now.hour
-    if 1<=current_hour<=3:
+    if 1<=current_hour<=6:
         make_github_issue(title=issue_title, body=full_report,labels=keyword_list,TOKEN=os.environ['TOKEN'])
     print("end")
 
