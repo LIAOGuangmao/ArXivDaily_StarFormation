@@ -1,21 +1,45 @@
-# encoding: utf-8
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
+from pathlib import Path
 
-# Authentication for user filing issue (must have read/write access to repository to add issue to)
-USERNAME = 'LIAOGuangmao'
+KEYWORDS = [
+    "star formation",
+    "star-forming",
+    "molecular cloud",
+    "interstellar medium",
+    "cloud",
+    "clump",
+    "core",
+    "filament",
+    "atomic gas",
+    "n-pdf",
+    "initial conditions",
+    "irdc",
+    "deuterium",
+    "prestellar",
+    "starless",
+    "turbulence",
+    "magnetic",
+    "virial",
+    "mach number",
+    "initial mass function",
+]
 
-# The repository to add this issue to
-REPO_OWNER = 'LIAOGuangmao'
-REPO_NAME = 'ArXivDaily_StarFormation'
+EXCLUDED_KEYWORDS = [
+    "galaxies",
+    "galaxy cluster",
+    " agn ",
+    "standard candle",
+    "x-ray binar",
+    "solar corona",
+]
 
-# Set new submission url of subject
-NEW_SUB_URL = 'https://arxiv.org/list/astro-ph/new'
+ARXIV_API_URL = "https://export.arxiv.org/api/query"
+ARXIV_QUERY = "cat:astro-ph.*"
+ARXIV_PAGE_SIZE = 100
+ARXIV_MAX_RESULTS = 2_000
+HTTP_TIMEOUT_SECONDS = 30
+HTTP_RETRIES = 3
+HTTP_RETRY_BASE_SECONDS = 2
 
-# Keywords to search
-KEYWORD_LIST = ["star formation", "star-forming", "molecular cloud", "interstellar medium", "cloud", "clump", "core", "filament", "atomic gas", "N-PDF", "initial conditions", "IRDC", "deuterium", "prestellar", "starless", "turbulence", "magnetic", "virial", "mach number", "initial mass function"]
-# Keywords to exclude
-KEYWORD_EX_LIST = ["galaxies", "galaxy cluster", " AGN ", "standard candle", "X-ray binar", "solar corona"]
-# Note that the 'Keywords' above are actually searched in the abstract instead of the real keyword section. 
+REPORT_PATH = Path("README.md")
+STATE_PATH = Path(".arxiv-daily-state.json")
+STATE_HISTORY_LIMIT = 10_000

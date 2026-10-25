@@ -1,2 +1,1 @@
-beautifulsoup4==4.6.3
-requests==2.19.1
+# The production updater uses only Python 3.10+ standard-library modules.
